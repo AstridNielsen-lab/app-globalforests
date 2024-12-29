@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.globalforests.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <name>GlobalForests</name>
+    <description>Um aplicativo para promover sustentabilidade e reflorestamento.</description>
+    <author email="juliocamposmachado@gmail.com" href="https://globalforests.vercel.app">Julio Campos Machado</author>
+    <content src="index.html" />
+    <config-file parent="/manifest" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    </config-file>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="orientation" value="default" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/android/icon.png" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="GradlePluginVersion" value="7.0.0" />
+    <preference name="PlayServicesVersion" value="19.0.0" />
+</widget>

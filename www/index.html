@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalForests</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="cordova.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GlobalForests</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#donations">Doações</a></li>
+                <li><a href="#community">Comunidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao GlobalForests</h2>
+            <p>Conectando colaboradores e promovendo a sustentabilidade.</p>
+            <button id="login-btn">Login / Registro</button>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>Missão: Reflorestamento e conservação ecológica para um futuro sustentável.</p>
+            <ul>
+                <li>Missão</li>
+                <li>Visão</li>
+                <li>Objetivos</li>
+            </ul>
+        </section>
+
+        <section id="donations">
+            <h2>Doações</h2>
+            <p>Contribua para o nosso projeto de reflorestamento:</p>
+            <button id="donate-paypal">Doar via PayPal</button>
+            <button id="donate-crypto">Doar via Criptomoedas</button>
+        </section>
+
+        <section id="community">
+            <h2>Comunidade</h2>
+            <p>Participe de eventos e discussões com outros colaboradores.</p>
+            <button id="join-community">Entrar na Comunidade</button>
+        </section>
+
+        <section id="corporate">
+            <h2>Parcerias Corporativas</h2>
+            <p>Saiba mais sobre como se tornar um parceiro GlobalForests.</p>
+            <form id="partnership-form">
+                <label for="company-name">Nome da Empresa:</label>
+                <input type="text" id="company-name" name="company-name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GlobalForests. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Plugins do Cordova -->
+    <script>
+        document.addEventListener('deviceready', function () {
+            console.log('Cordova está pronto!');
+        });
+    </script>
+</body>
+</html>

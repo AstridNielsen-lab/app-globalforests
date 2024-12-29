@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.globalforests.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>GlobalForests</name>
+    <description>Um aplicativo para promover sustentabilidade e reflorestamento.</description>
+    <author email="juliocamposmachado@gmail.com" href="https://globalforests.vercel.app">Julio Campos Machado</author>
+
+    <!-- Preferências Globais -->
+    <preference name="orientation" value="default" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/android/icon.png" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+
+    <!-- Plugins -->
+    <plugin name="cordova-plugin-device" spec="^2.0.3" />
+    <plugin name="cordova-plugin-network-information" spec="^3.0.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^5.0.0" />
+
+    <!-- Plataforma Android -->
+    <platform name="android">
+        <preference name="AndroidXEnabled" value="true" />
+        <preference name="GradlePluginVersion" value="7.0.0" />
+        <preference name="PlayServicesVersion" value="19.0.0" />
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+    </platform>
+
+    <!-- Plataforma iOS -->
+    <platform name="ios">
+        <preference name="SwiftVersion" value="5.0" />
+    </platform>
+
+    <!-- Conteúdo Principal -->
+    <content src="index.html" />
+</widget>
