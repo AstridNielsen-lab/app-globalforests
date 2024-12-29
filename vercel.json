@@ -1,0 +1,10 @@
+{
+    "builds": [
+      {
+        "src": "www/**/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "outputDirectory": "www"
+  }
+  
